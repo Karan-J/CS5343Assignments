@@ -1,0 +1,101 @@
+--------------------------------------------------------------------------
+
+Assignment1Q1
+
+Before sorting the linked list
+1, 5, 8, 2, 9, 25, 4, 7, 6, 10, 12, 67, 16, 49, 24
+Swap val1 = 1 and val2 = 1
+Equal values, so no swapping
+1, 5, 8, 2, 9, 25, 4, 7, 6, 10, 12, 67, 16, 49, 24
+Swap val1 = 5 and val2 = 2
+n1 = 5, n1Previous = Node [val=1]
+n2 = 2, n2Previous = Node [val=8]
+1, 2, 8, 5, 9, 25, 4, 7, 6, 10, 12, 67, 16, 49, 24
+Swap val1 = 8 and val2 = 4
+n1 = 8, n1Previous = Node [val=2]
+n2 = 4, n2Previous = Node [val=25]
+1, 2, 4, 5, 9, 25, 8, 7, 6, 10, 12, 67, 16, 49, 24
+Swap val1 = 5 and val2 = 5
+Equal values, so no swapping
+1, 2, 4, 5, 9, 25, 8, 7, 6, 10, 12, 67, 16, 49, 24
+Swap val1 = 9 and val2 = 6
+n1 = 9, n1Previous = Node [val=5]
+n2 = 6, n2Previous = Node [val=7]
+1, 2, 4, 5, 6, 25, 8, 7, 9, 10, 12, 67, 16, 49, 24
+Swap val1 = 25 and val2 = 7
+n1 = 25, n1Previous = Node [val=6]
+n2 = 7, n2Previous = Node [val=8]
+1, 2, 4, 5, 6, 7, 8, 25, 9, 10, 12, 67, 16, 49, 24
+Swap val1 = 8 and val2 = 8
+Equal values, so no swapping
+1, 2, 4, 5, 6, 7, 8, 25, 9, 10, 12, 67, 16, 49, 24
+Swap val1 = 25 and val2 = 9
+n1 = 25, n1Previous = Node [val=8]
+n2 = 9, n2Previous = Node [val=25]
+1, 2, 4, 5, 6, 7, 8, 9, 25, 10, 12, 67, 16, 49, 24
+Swap val1 = 25 and val2 = 10
+n1 = 25, n1Previous = Node [val=9]
+n2 = 10, n2Previous = Node [val=25]
+1, 2, 4, 5, 6, 7, 8, 9, 10, 25, 12, 67, 16, 49, 24
+Swap val1 = 25 and val2 = 12
+n1 = 25, n1Previous = Node [val=10]
+n2 = 12, n2Previous = Node [val=25]
+1, 2, 4, 5, 6, 7, 8, 9, 10, 12, 25, 67, 16, 49, 24
+Swap val1 = 25 and val2 = 16
+n1 = 25, n1Previous = Node [val=12]
+n2 = 16, n2Previous = Node [val=67]
+1, 2, 4, 5, 6, 7, 8, 9, 10, 12, 16, 67, 25, 49, 24
+Swap val1 = 67 and val2 = 24
+n1 = 67, n1Previous = Node [val=16]
+n2 = 24, n2Previous = Node [val=49]
+1, 2, 4, 5, 6, 7, 8, 9, 10, 12, 16, 24, 25, 49, 67
+Swap val1 = 25 and val2 = 25
+Equal values, so no swapping
+1, 2, 4, 5, 6, 7, 8, 9, 10, 12, 16, 24, 25, 49, 67
+Swap val1 = 49 and val2 = 49
+Equal values, so no swapping
+1, 2, 4, 5, 6, 7, 8, 9, 10, 12, 16, 24, 25, 49, 67
+Swap val1 = 67 and val2 = 67
+Equal values, so no swapping
+1, 2, 4, 5, 6, 7, 8, 9, 10, 12, 16, 24, 25, 49, 67
+After performing selection sort
+1, 2, 4, 5, 6, 7, 8, 9, 10, 12, 16, 24, 25, 49, 67
+
+
+--------------------------------------------------------------------------
+
+Assignment1Q2 (element found in the list)
+
+2	 3	 54	 6	 8	 345	 25	 235	 623	 9	 62	 
+Sorting the list
+2	3	6	8	9	25	54	62	235	345	623	
+0	1	2	3	4	5	6	7	8	9	10	
+Finding val: 6 in the list
+
+Calling recursiveTertiarySearch(ar,6,0,10)
+
+Finding in middle. mid1 = 3, mid2 = 7 
+Calling recursiveTertiarySearch(li,6,0,3) in 1st part
+Finding in middle. mid1 = 1, mid2 = 2 
+Calling recursiveTertiarySearch(li,6,2,2) in 2nd part
+Found at low: 2
+Found value 6 at 2
+
+--------------------------------------------------------------------------
+
+Assignment1Q2 (element not found in the list)
+
+2	 3	 54	 6	 8	 345	 25	 235	 623	 9	 62	 
+Sorting the list
+2	3	6	8	9	25	54	62	235	345	623	
+0	1	2	3	4	5	6	7	8	9	10	
+Finding val: 100 in the list
+
+Calling recursiveTertiarySearch(ar,100,0,10)
+
+Finding in middle. mid1 = 3, mid2 = 7 
+Calling recursiveTertiarySearch(li,100,8,10) in 3rd part
+Finding in middle. mid1 = 8, mid2 = 10 
+Calling recursiveTertiarySearch(li,100,8,8) in 1st part
+Not found: -1
+
